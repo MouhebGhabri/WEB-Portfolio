@@ -21,19 +21,8 @@ var typed = new Typed('.text-brand', {
    loop:true
 });
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "ghabrimouheb@gmail.com",
-    Password : "wncbbbvxwyzcdzon",
-    To : 'ghabrimouheb@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : document.getElementById("subject").value + "portfolio",
-    Body : document.getElementById("message").value  ,
-}).then(
-  message => alert("message")
-);
-}
+
+
 
 Swal.fire({
   position: 'top-end',

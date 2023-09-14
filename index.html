@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
@@ -491,8 +492,6 @@
                     </form>
                 </div>
             </div>
-
-
         </div>
     </section>
     <!-- //CONTACT -->
@@ -524,6 +523,19 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "ghabrimouheb@gmail.com",
+          Password : "wncbbbvxwyzcdzon",
+          To : 'ghabrimouheb@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : document.getElementById("subject").value + "portfolio",
+          Body : document.getElementById("message").value  ,
+      }).then(
+        message => alert("message")
+      );
+      } </script>
 </body>
 
 </html>
