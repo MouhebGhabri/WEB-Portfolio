@@ -15,7 +15,7 @@ AOS.init({
 });
 var typed = new Typed('.text-brand', {
   strings:["GHABRI Mouheb","Front-end Developer","Back-end Developer","Mobile Developer"],
-  typeSpeed:100,
+  typeSpeed:150,
   // backSpeed:100,
   // backDelay:25,
    loop:true
